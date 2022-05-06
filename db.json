@@ -1,16 +1,10 @@
 {
   "plants": [
     {
-      "id": 1,
-      "name": "Aloe",
-      "image": "./images/aloe.jpg",
-      "price": 15.99
-    },
-    {
       "id": 2,
       "name": "ZZ Plant",
       "image": "./images/zz-plant.jpg",
-      "price": 25.98
+      "price": "26"
     },
     {
       "id": 3,
@@ -41,6 +35,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "image": "https://www.forkknifeswoon.com/wp-content/uploads/2014/10/simple-homemade-chicken-ramen-fork-knife-swoon-01.jpg",
+      "name": "Plant",
+      "price": "10",
+      "id": 8
+    },
+    {
+      "image": "",
+      "name": "",
+      "price": "",
+      "id": 9
     }
   ]
 }
