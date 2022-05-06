@@ -6,10 +6,11 @@ function PlantList({allPlants, search, handleImageClick, editPrice, editName, ha
   let plantList = allPlants
   
   .filter(plant => {
-    if(plant.name.toLowerCase().includes(search.toLowerCase())){
-      return plant
-    }else if(search === ''){
-      return plant
+    //try doing it in a ternary
+    if(search === ''){
+      return true
+    }else{
+      return plant.name.toLowerCase().includes(search.toLowerCase())
     }
     })
   //.filter(plant => plant.name !== deletePlant)

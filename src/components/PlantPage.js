@@ -40,6 +40,15 @@ function PlantPage() {
         .then(data => setEditPrice(+data.price))
       setButtonName(buttonName => !buttonName)
 
+      let newPlantList = allPlants.map(plant => {
+        if(plant.name === editName){
+          plant.price = price
+          return plant
+        }else {
+          return plant
+        }
+      })
+      setAllPlants(newPlantList)
       console.log(editPlant)
     }else{
       let newPlant = {
